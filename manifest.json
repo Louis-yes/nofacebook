@@ -1,0 +1,13 @@
+{
+   "name": "no facebook",
+   "description": "stops facebook from rendering",
+   "version": "1.0",
+   "manifest_version": 3,
+   "content_scripts": [
+      {
+         "matches": ["https://*.facebook.com/*"],
+         "run_at": "document_start",
+         "js": ["nofacebook.js"]
+      }
+   ]
+}
